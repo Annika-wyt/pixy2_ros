@@ -6,13 +6,13 @@
 
     <group ns="$(arg agent_name)">    
         <rosparam file="$(arg camera_yaml)"/>
-        <node name="pixy_node" pkg="pixy_camera" type="pixy_node"  output="screen">
+        <node name="pixy_node" pkg="pixy2_ros" type="pixy_node"  output="screen">
             <param name="camera_yaml"   value="$(arg camera_yaml)"/>
             <param name="debug"         value="$(arg debug)"/>
             <param name="mode"          value="$(arg mode)"/>
         </node>
         
-        <node name="pixy_landmark_detection" pkg="pixy_camera" type="pixy_landmark_detection.py"  output="screen">
+        <node name="pixy_landmark_detection" pkg="pixy2_ros" type="pixy_landmark_detection.py"  output="screen">
             <param name="debug"         value="$(arg debug)"/>
         </node>
     </group>
