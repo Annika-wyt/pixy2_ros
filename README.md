@@ -1,1 +1,9 @@
-pixy2_firmware-3.0.20-general.hex
+pxy2_firmware-3.0.20-general.hex
+
+
+cd include
+
+git clone https://github.com/charmedlabs/pixy2.git
+
+cd pixy2/scripts && ./build_libpixyusb2.sh
+
