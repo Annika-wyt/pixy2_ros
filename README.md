@@ -1,0 +1,1 @@
+pixy2_firmware-3.0.20-general.hex

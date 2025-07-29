@@ -1,0 +1,24 @@
+image_width: 79
+image_height: 52
+# image_width: 316
+# image_height: 208
+camera_name: camera
+camera_matrix:
+  rows: 3
+  cols: 3
+  data: [54.0097, 0.0, 39.4693, 0.0, 53.9896, 29.4032, 0.0, 0.0, 1.0] 
+  #a bit weird here, caz the intrinsic calibration is done for image resolution of (316x208), this is just scaled
+distortion_model: plumb_bob
+distortion_coefficients:
+  rows: 1
+  cols: 5
+  data: [-0.348450, 0.124298, 0.000086, -0.000417, 0.0]
+rectification_matrix:
+  rows: 3
+  cols: 3
+  data: [1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0]
+projection_matrix:
+  rows: 3
+  cols: 4
+  data: [42.9018, 0.0, 39.4286, 0.0 ,0.0, 48.9812, 30.1092, 0.0 ,0.0, 0.0, 1.0, 0.0]
+#a bit weird here, caz the intrinsic calibration is done for image resolution of (316x208), this is just scaled
